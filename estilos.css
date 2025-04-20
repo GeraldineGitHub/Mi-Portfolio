@@ -1,0 +1,288 @@
+/* Fuente principal para todo el sitio */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Colores llamativos para títulos */
+h1, h2 {
+    color: rgba(55, 8, 70, 0.4);
+    transition: color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+/* Efecto al pasar el mouse por encima */
+h1:hover, h2:hover {
+    color: #5A189A;
+}
+
+/* Estilos de la barra de navegación */
+.navbar-dark {
+    background-color: #1d1c1c; 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFD6FF;
+}
+
+/* Estilo para la imagen del perfil */
+.perfil-imagen {
+    /* Bordes morados alrededor de la imagen */
+    border: 5px solid #C77DFF;
+    
+    /* Sombra suave alrededor de la imagen para darle un efecto elevado */
+    box-shadow: 0 4px 15px rgba(92, 24, 110, 0.4);
+    
+    /* Efecto de transición para animar el cambio de transformación */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el ratón sobre la imagen */
+.perfil-imagen:hover {
+    /* Escala la imagen un 5% más grande */
+    transform: scale(1.05);
+}
+
+/* Estilo base para los íconos de la sección de perfil */
+.icono-perfil {
+    color: rgba(55, 8, 70, 0.4); /* Color violeta suave */
+    transition: color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+/* Efecto al pasar el mouse por encima del ícono */
+.icono-perfil:hover {
+    color: #5A189A; /* Violeta intenso para destacar al hacer hover */
+}
+
+
+/* Animación de entrada suave */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  /* Estilo para los íconos de conocimientos */
+.logo-conocimiento {
+    border: 2px solid #C77DFF; /* Borde violeta alrededor del ícono */
+    border-radius: 10px;       /* Bordes redondeados */
+    padding: 10px;             /* Espacio interior para que no quede pegado */
+    background-color: white;   /* Fondo blanco para resaltar el ícono */
+    box-shadow: 0 4px 8px rgba(92, 24, 110, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease; /* Suaviza el efecto al hacer hover */
+}
+
+/* Efecto al pasar el mouse por encima */
+.logo-conocimiento:hover {
+    transform: scale(1.1); /* Agranda el ícono un poco */
+}
+
+/* Estilo personalizado para el botón GitHub */
+.btn-github {
+    background-color: #252525;     /* Fondo negro */
+    color: white;                  /* Texto blanco */
+    border: 2px solid #7B2CBF;     /* Borde violeta */
+    padding: 10px 20px;
+    border-radius: 8px;            /* Bordes redondeados */
+    text-decoration: none;         /* Sin subrayado */
+    box-shadow: 0 4px 12px rgba(95, 2, 145, 0.4); /* Sombra violeta suave */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+    display: inline-flex;          /* Ícono y texto alineados */
+    align-items: center;
+    gap: 10px;                     /* Espacio entre ícono y texto */
+    font-weight: 500;
+}
+
+/* Efecto hover para el botón */
+.btn-github:hover {
+    background-color: #2b2a2a;     /* Negro un poco más claro al hacer hover */
+    color: rgba(255, 255, 255, 0.7); /* Texto difuso (gris suave) */
+    transform: translateY(-2px);   /* Efecto de levantamiento */
+    box-shadow: 0 6px 16px rgba(161, 5, 245, 0.6); /* Sombra violeta más intensa */
+}
+
+/* Efecto al presionar el botón */
+.btn-github:active,
+.btn-github:focus {
+    color: rgb(170, 168, 168); /* Gris suave cuando se presiona */
+    border-color: #7B2CBF;   /* Mantiene el borde violeta */
+    background-color: #1a1a1a; /* Color oscuro al presionar */
+    transform: translateY(4px);  /* Efecto de hundimiento */
+    box-shadow: 0 2px 8px rgba(161, 5, 245, 0.4); /* Sombra más suave al presionar */
+    outline: none; /* Quita el borde azul de enfoque (opcional) */
+}
+
+/* === Estilos personalizados para la sección de Idiomas === */
+
+.progress-bar {
+    color: transparent; /* Hace que el texto dentro de la barra de progreso no sea visible */
+}
+
+/*=== Estilo personalizado para la sección de contacto ===*/
+#Contacto {
+    background-color: #bebebe; /* Fondo gris claro para toda la sección */
+}
+
+/*=== Estilo personalizado para la caja de contacto ===*/
+.bg-contact {
+    background: linear-gradient(145deg, #caa7e9, #6f5f79); /* Degradado violeta */
+    color: white;
+}
+
+
+/* Estilos personalizados para el botón de descarga del CV */
+.btn-outline-light {
+    border: 2px solid #4e4a4d; /* Borde llamativo */
+    color: white;              /* Texto blanco */
+    font-weight: 500;          /* Texto un poco más grueso (semibold) */
+    box-shadow: 0 4px 10px rgba(199, 125, 255, 0.3); /* Sombra violeta suave alrededor del botón */
+    background-image: linear-gradient(45deg, #7B2CBF, #C77DFF); /* Degradado de colores violeta a morado */
+    background-size: 200% 200%; /* Asegura que el degradado tenga suficiente espacio */
+    transition: all 0.3s ease;  /* Transición suave para todos los cambios (hover, foco, etc.) */
+    border-radius: 8px;         /* Bordes redondeados para un toque suave */
+    padding: 10px 20px;         /* Espaciado interno */
+    display: inline-flex;       /* Alineación del ícono y el texto */
+    align-items: center;
+    gap: 10px;                  /* Espacio entre el ícono y el texto */
+  }
+  
+  /* Efecto hover para el botón */
+  .btn-outline-light:hover {
+    background-position: 100% 100%; /* Mueve el degradado cuando pasa el mouse */
+    color: rgb(78, 78, 78); /* El texto sigue siendo blanco */
+    box-shadow: 0 6px 16px rgba(199, 125, 255, 0.5); /* Sombra más intensa al hacer hover */
+    transform: scale(1.1); /* Efecto de expansión al pasar el mouse */
+  }
+  
+  /* Efecto cuando se hace clic en el botón (efecto rebote) */
+  .btn-outline-light:active {
+    animation: bounce 0.4s ease-in-out; /* Aplica la animación de rebote */
+    transform: scale(1); /* El tamaño vuelve a la normalidad */
+  }
+  
+  /* Animación de rebote */
+  @keyframes bounce {
+    0% {
+      transform: scale(1); /* Empieza en el tamaño normal */
+    }
+    30% {
+      transform: scale(1.1); /* Expande el botón un poco */
+    }
+    50% {
+      transform: scale(0.95); /* Contrae el botón un poco para el efecto de rebote */
+    }
+    70% {
+      transform: scale(1.05); /* Vuelve a expandir un poco */
+    }
+    100% {
+      transform: scale(1); /* Vuelve a su tamaño original */
+    }
+  }
+
+  /* Pie de página */
+footer {
+    background-color: #343a40;  /* Fondo gris oscuro */
+    color: white;
+    padding: 20px 0;
+}
+
+/* Estilo para los enlaces */
+footer a {
+    text-decoration: none;  /* Quitar subrayado */
+    color: white;
+    transition: color 0.3s ease;  /* Efecto de transición para el color */
+}
+
+/* Efecto hover */
+footer a:hover {
+    color: #ff6f61;  /* Color suave de transición al pasar el mouse */
+}
+
+/* Iconos */
+footer i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+/* Estilo para el texto de la sección de Educación */
+#Educacion p {
+    font-size: 1.2rem; /* Tamaño de fuente ajustable */
+    line-height: 1.8; /* Espaciado entre líneas para mayor legibilidad */
+    color: #f2f2f2; /* Texto más claro para destacar sobre el fondo */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil para mejorar legibilidad */
+}
+
+/* Estilo para la sección de Educación */
+#Educacion {
+    background: linear-gradient(to bottom right, rgba(190, 156, 199, 0.9), rgba(43, 27, 44, 0.9)); /* Degradado con menos opacidad para un mejor contraste */
+    color: #f2f2f2; /* Color blanco para el texto */
+    padding: 50px 0; /* Espaciado vertical */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave para darle profundidad */
+}
+
+/* Estilo y efectos para la imagen con margen */
+.img-animada {
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    border: 5px solid rgb(83, 64, 82); /* Borde alrededor de la imagen */
+    padding: 2px; /* Un poco de espacio entre el borde y la imagen */
+    border-radius: 8px; /* Bordes redondeados para suavizar el borde */
+}
+
+.img-animada:hover {
+    transform: scale(1.1); /* Efecto de zoom */
+    box-shadow: 0 12px 24px rgba(14, 2, 14, 0.3); /* Sombra más suave */
+}
+
+/* Sombra suave para otras secciones */
+.shadow-lg {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+/* Scroll anclado suave en secciones */
+section {
+    scroll-margin-top: 70px;
+}
+
+/* Color para las barras de progreso */
+.progress-bar {
+    background-color: #7B2CBF;
+}
+
+/* Efecto hover en las tarjetas de proyectos */
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Botón de contacto */
+.btn-outline-light:hover {
+    background-color: #C77DFF;
+    border-color: #C77DFF;
+}
+
+/* Pie de página */
+footer {
+    background-color: #3C096C;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Fondo con gradiente suave para las secciones */
+section {
+    background: linear-gradient(135deg, rgba(92, 24, 110, 0.1), rgba(55, 8, 70, 0.1));
+    background-size: cover;
+    box-shadow: 0 4px 12px rgba(128, 18, 158, 0.1);
+}
+
+
